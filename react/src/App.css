@@ -1,0 +1,346 @@
+/* ALLMÄnt */
+body {
+    margin: 0; /* Tar bort standardmarginalen */
+    font-family: Arial, sans-serif; /* Sätter standardfonten */
+    background-color: #e9dfd4; /* Bakgrundsfärg på hela sidan */
+}
+
+h2{
+	text-align: center; /* Centrerar alla h2-rubriker */
+}
+
+p{
+	text-align: center; /* Centrerar alla paragrafer */
+}
+
+/* NAVIGATION */
+header {
+    background-color: #7a6c5d;
+    color: white;
+    padding: 15px; /* Inre marginal runt innehållet */
+    display: flex; /* Flexbox för att ordna element horisontellt */
+    align-items: center; /* Centrerar innehåll vertikalt */
+    justify-content: space-between; /* Lägger ut innehållet i ytterkanterna */
+    flex-wrap: wrap; /* Tillåter radbrytning vid behov */
+}
+
+.logo {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+/*la till detta efter validering, gjorde så den är bestämd bredd och tillåter radbrytning*/
+.logo h1 {
+	width: 300px;
+	text-wrap: wrap;
+}
+
+nav ul {
+    list-style: none; /* Tar bort standardpunktlista */
+    padding: 0;
+    display: flex; /* Gör navigationsmenyn horisontell */
+    gap: 40px; /* Mellanrum mellan länkar */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    header { padding: 10px; } /* Minskad padding för små skärmar */
+    nav ul { gap: 10px; } /* Mindre avstånd mellan länkar */
+    nav ul li a { font-size: 16px; padding: 5px; } /* Mindre textstorlek och padding */
+}
+
+@media screen and (max-width: 480px) {
+	.logo { font-size: 16px; } /* Mindre logotyptext */
+	nav ul { gap: 5px; } /* Mindre avstånd mellan länkar */
+	nav ul li a { font-size: 14px; padding: 3px; } /* Mindre textstorlek och padding */
+ }
+ 
+
+/* STARTSIDA */
+.hero {
+    position: relative; /* Tillåter absolut positionerade element inuti */
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), 
+                url('./bilder/pexels-karolina-grabowska-5942743.jpg') no-repeat center/cover;
+    height: 700px;
+    display: flex; /* Använder flexbox för att centrera innehållet */
+    align-items: center; /* Centrerar innehåll vertikalt */
+    justify-content: flex-start; /* Lägger innehållet till vänster */
+    padding: 20px; /* Lägger till lite inre marginal */
+}
+
+.overlay {
+    color: white;
+    padding: 20px;/* Padding runt texten */
+    max-width: 600px; /* Begränsar bredden */
+    border-radius: 10px; /* Rundade hörn */
+    position: relative; /* Tillåter inre positionering */
+}
+
+.overlay a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* VÅRA HUNDAR */
+.puppy-section h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #000;
+    margin-bottom: 8px; /* Utrymme under rubriken */
+    padding-left: 100px; /* Indrag från vänster */
+}
+
+.puppy-box {
+    background-color: white;
+    color: #263f26;
+    width: 1650px; /* Fast bredd */
+    padding: 20px; /* Inre marginal */
+    border-radius: 8px;
+    display: flex; /* Flexbox för att placera hundar bredvid varandra */
+    flex-wrap: wrap; /* Radbrytning vid behov */
+    gap: 40px; /* Mellanrum mellan hundar */
+    margin: 0 auto 40px auto; /* Centrerar sektionen */
+}
+
+.puppy-box a {
+    text-decoration: none;
+    color: #263f26;
+}
+
+.puppy-box a:hover {
+    background-color: #c2c4a7; /* Bakgrundsfärg vid hovring */
+}
+
+/*OLIVIA*/
+
+h4{
+	text-align: center; /* Centrerar alla h4-rubriker */
+	margin-top: 60px;
+}
+
+.text-container{
+	width: 80%; /*sätter bredden till 80% av elementet */
+	margin: 20px auto; /* Centrerar textcontainern horisontellt */
+}
+
+.spacer2 {
+	height: 250px;
+}
+
+.parents {
+    display: flex; /* Lägger elementen i en rad */
+    justify-content: center; /* Centrerar innehållet horisontellt */
+    gap: 20px;
+    margin: 20px 0; /* Ger lite utrymme ovanför och under */
+}
+
+.parent {
+    text-align: center; /* Centrerar texten i varje förälder */
+}
+
+.parent img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.puppies {
+    display: flex; /* Lägger bilderna i en rad */
+    flex-wrap: wrap; /* Tillåter radbrytning om skärmen är för smal */
+    justify-content: center;
+    gap: 40px;
+}
+
+.puppy {
+    text-align: center; /* Centrerar texten under varje bild */
+}
+
+.puppy img {
+    width: 150px;
+    border-radius: 10px;
+}
+
+video {
+	display: block;
+	margin: auto;
+	text-align: center; /* Centrerar text */
+}
+
+/* OM OSS */
+.about-container {
+    display: flex; /* Gör sektionen flexibel */
+    justify-content: space-between; /* Sprider innehållet */
+    align-items: center; /* Centrerar vertikalt */
+    background-color: #c4c3bb;
+    border-radius: 20px;
+    padding: 40px;
+    max-width: 1500px; /* Begränsad bredd */
+    margin: 50px auto; /* Centrerad */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Lätt skugga */
+}
+
+.about-text {
+    max-width: 45%; /* Begränsar textbredd */
+    color: #263f26;
+}
+
+.about-image {
+    width: 40%; /* Bildstorlek */
+}
+
+.about-image img {
+    width: 100%; /* Gör bilden responsiv */
+    border-radius: 40%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Skugga */
+    filter: grayscale(100%); /* Gör bilden svartvit */
+}
+
+.spacer{
+	height: 100px;
+}
+
+/*INTRESSEANMÄLAN*/
+form {
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex; /* Använder flexbox */
+    flex-direction: column; /* Staplar elementen */
+}
+
+label {
+    font-weight: bold;
+    margin-top: 40px; /* Utrymme över */
+}
+
+input, textarea {
+    width: 100%; /* Gör input-fält och textarea fullbredd */
+	height: 100%;
+    padding: 12px;
+    margin-top: 5px;
+    border: 1px solid #ccc; /* Ljusgrå kant */
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+}
+
+/* rader med flera input fält */
+.form-group {
+    display: flex; /* Lägger fälten i en rad */
+    gap: 40px; /*Mellanrum mellan två input fält*/
+	margin-top: 40px;
+}
+
+.form-group div {
+    width: 100%; /* Gör att varje input-fält tar lika mycket plats */
+	height: 100%;
+}
+
+/* SKICKA-KNAPP */
+button {
+    margin-top: 40px;
+	margin-right: 40px; /* Avstånd till höger */
+    padding: 12px;
+    font-size: 18px;
+    background-color:#354c35;
+    color: white;
+    border: none; /* Tar bort kantlinje */
+    border-radius: 5px;
+	width: 100px;
+	align-self: end; /* Justerar knappen till höger */
+}
+
+button:hover {
+    background-color:#242c24; /* Ändrar färg vid hovring */
+}
+
+/* Responsiv design för mobiler */
+@media (max-width: 768px) {
+    .form-group {
+        flex-direction: column; /* Staplar input-fälten vertikalt */
+        gap: 10px; /* Mindre mellanrum mellan fälten */
+    }
+}
+
+/* FOOTER */
+footer {
+    background-color: #7a6c5d;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Centrerar vertikalt */
+    flex-wrap: wrap; /* Tillåter radbrytning */
+    max-width: 1000px;
+    margin: 0 auto; /* Centrerad */
+    padding: 20px;
+}
+
+.footer-brand h2, .footer-social h3, .footer-contact h3, .footer-social p, .footer-contact p {
+    color: white;
+}
+
+.footer-contact a {
+    text-decoration: none;
+    color: white;
+}
+
+.tabell p, a {
+	text-decoration: none;
+	color: white;
+}
+
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Staplar elementen i footern vertikalt */
+        text-align: center; /* Centrerar texten */
+    }
+    .footer-brand h2 { text-align: center; } /* Centrerar titeln i footern */
+}
+
+/* TABELLSIDA */
+table {
+    width: 70%;
+	height: 350px;
+    margin: 20px auto; /* Centrerar tabellen */
+    font-family: Arial, sans-serif;
+    text-align: left; /* Justerar texten åt vänster */
+}
+
+th, td {
+    border: 1px solid #ddd; /* Ljusgrå kantlinjer */
+    padding: 8px;
+    background-color: #adbbad;
+    font-weight: bold;
+}
+
+@media print {
+    * {
+        -webkit-print-color-adjust: exact; /* Ser till att färger skrivs ut */
+        print-color-adjust: exact; /* Samma som ovan men bredare stöd */
+    }
+
+    body {
+        background-color: #e9dfd4 !important; /* Behåller bakgrundsfärgen vid utskrift */
+    }
+
+    .about-container {
+        background-color: #c4c3bb !important; /* Behåller bakgrundsfärgen i "Om oss" sektionen */
+    }
+
+    footer {
+        background-color: #7a6c5d !important; /* Behåller bakgrundsfärgen i footern */
+    }
+
+    th, td {
+        background-color: #adbbad !important; /* Behåller färger i tabellen vid utskrift */
+    }
+}
