@@ -10,7 +10,7 @@ const Intresse = () => {
             <label>Namn</label>
             <input name="name" placeholder="Skriv ditt för- och efternamn här" />
             
-            <div class="form-group">
+            <div className="form-group">
                 <div>
                     <label>Telefon</label>
                     <input name="phone" placeholder="Ditt telefonnummer" />
@@ -31,3 +31,5 @@ const Intresse = () => {
 }
 
 export default Intresse;
+
+

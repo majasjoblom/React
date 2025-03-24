@@ -104,7 +104,8 @@ nav ul li a {
     border-radius: 8px;
     display: flex; /* Flexbox för att placera hundar bredvid varandra */
     flex-wrap: wrap; /* Radbrytning vid behov */
-    gap: 40px; /* Mellanrum mellan hundar */
+    gap: 10px; /* Mellanrum mellan hundar */
+	align-items: center; /* Justerar vertikal placering */
     margin: 0 auto 40px auto; /* Centrerar sektionen */
 }
 
@@ -244,15 +245,19 @@ input, textarea {
 button {
     margin-top: 40px;
 	margin-right: 40px; /* Avstånd till höger */
-    padding: 12px;
-    font-size: 18px;
+	padding: 1px; /* Minskar inre marginalen */
+	font-size: 14px; /* Gör texten mindre */
+	line-height: 30px; /* Justerar vertikal centrering av texten */
     background-color:#354c35;
     color: white;
     border: none; /* Tar bort kantlinje */
     border-radius: 5px;
 	width: 100px;
+	height: 30px; /* Sätter en specifik höjd */
+	margin-left: 10px; /* Skapar avstånd mellan namn och knapp */
 	align-self: end; /* Justerar knappen till höger */
 }
+
 
 button:hover {
     background-color:#242c24; /* Ändrar färg vid hovring */
